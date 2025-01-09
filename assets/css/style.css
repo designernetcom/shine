@@ -296,6 +296,10 @@ h6 {
 
 /* Large devices */
 @media (max-width: 1199px) {
+  .container{
+    width: 100%;
+    padding: 0px 15px;
+  }
   .h1,
   h1 {
     font-size: 40px;
@@ -827,11 +831,13 @@ textarea.is-invalid {
   visibility: hidden;
 }
 .vs-menu-wrapper .mobile-logo {
-  padding-bottom: 30px;
-  padding-top: 30px;
-  display: block;
-  text-align: center;
-  background-color: var(--body-bg);
+  width: 142px;
+    /* padding-bottom: 30px; */
+    padding-top: 30px;
+    padding-left: 29px;
+    display: block;
+    text-align: center;
+    background-color: var(--body-bg);
 }
 .vs-menu-wrapper .mobile-logo svg {
   max-width: 185px;
@@ -975,16 +981,16 @@ textarea.is-invalid {
 }
 
 .vs-menu-toggle {
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  font-size: 24px;
-  border: none;
-  background-color: var(--theme-color);
-  color: var(--white-color);
-  display: inline-block;
-  border-radius: 50%;
-  z-index: 99;
+  width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 24px;
+    border: none;
+    background-color: #3e4483;
+    color: var(--white-color);
+    display: inline-block;
+    border-radius: 50%;
+
 }
 .vs-menu-toggle:hover {
   background-color: #242d64;
@@ -8820,12 +8826,12 @@ body.layout5 .slick-dots li.slick-active button {
   .form-wrap1.space {
     background-image: none !important;
   }
+  .container {
+    padding: 0px 15px;
+    width: 100%;
 }
-@media (max-width:480px) {
-  .form-box4::before {
-    width: 100%; 
-  }
 }
+
 
 .form-style1 .form-group {
   position: relative;
@@ -8936,6 +8942,7 @@ body.layout5 .slick-dots li.slick-active button {
 @media (max-width: 575px) {
   .form-style4 {
     padding: 40px 32px 27px;
+    margin-bottom: 40px;
   }
 }
 .form-style4 .form-group label {
@@ -11124,7 +11131,8 @@ body.layout4 {
   .feature-style2 .vs-circle {
     --circle-size: 100%;
     top: 30px;
-  }
+    display: none;
+}
 }
 .dots-spacing-0 .slick-dots {
   margin-bottom: 0;
@@ -15236,4 +15244,47 @@ span.select2-selection.select2-selection--single:focus {
 .form-section4{
   padding-top: 70px;
   padding-bottom: 0px;
+}
+@media (max-width:480px) {
+  .form-box4::before {
+    width: 100%; 
+  }
+  .container {
+    padding: 0px 15px;
+    width: 100%;
+}
+}
+@media (max-width:1024px){
+  .container {
+    padding: 0px 15px;
+    width: 100%;
+  }
+  .form-box4::before {
+    width: 100%;
+    display: none;
+  }
+ 
+}
+
+@media (max-width:1500px){
+  .container {
+    padding: 0px 15px;
+      width: 100%;
+  }
+  .form-box4::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -109px;
+    width: 1471px;
+    height: 735px;
+    background-image: url(../img/bg/form4-1.png);
+}
+}
+@media (max-width:2500px){
+  .category-style2 .category-title a{
+    margin-bottom: 5px;
+    /* margin-top: -0.2em; */
+    font-size: 23px;
+}
 }
