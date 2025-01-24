@@ -10493,9 +10493,12 @@ body.layout4 {
 /*------------------- 4.21. Call To Active  -------------------*/
 .cta-box1 {
   background-color: #242d64;
-  max-width: 590px;
-  padding: 81px 75px 70px 95px;
+  max-width: 570px;
+  padding: 70px 75px 50px 95px;
   border-radius: 193px 7px 234px 142px;
+}
+.cta-box1 h2{
+  font-size: 38px;
 }
 .cta-box1 .cta-title {
   color: var(--white-color);
