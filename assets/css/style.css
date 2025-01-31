@@ -10609,7 +10609,7 @@ body.layout4 {
 /*------------------- 4.23. Gallery  -------------------*/
 .gallery-style1 .gallery-img {
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
   border-radius: 30px;
 }
 .gallery-style1 .gallery-img img {
@@ -10639,12 +10639,12 @@ body.layout4 {
 .gallery-style1 .gallery-btn {
   position: absolute;
   left: 50%;
-  top: 50%;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  top: 40%;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
   text-align: center;
-  background-color: #232c61;
+  background-color: transparent;
   color: #fff;
   border-radius: 50%;
   font-size: 24px;
@@ -10660,7 +10660,7 @@ body.layout4 {
   top: 2px;
   right: 2px;
   bottom: 2px;
-  background-color: #242d64;
+  /* background-color: #242d64; */
   border-radius: inherit;
   z-index: -1;
   transition: all ease 0.4s;
@@ -15409,4 +15409,109 @@ textarea {
 .mega-hover:not(.blog-img) {
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+}
+.sticky-icon  {
+  z-index: 11111;
+  position: fixed;
+  top: 40%;
+  left: 0px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+}  
+.sticky-icon a  {
+	/* transform:translate(160px,0px); */
+	border-radius:0px 50px 50px 0px;
+	text-align:left;
+	margin:2px;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:4px;
+	font-size:18px;
+	font-family:'Oswald', sans-serif;
+	transition:all 0.8s;}
+.sticky-icon a:hover  {
+	color:#FFF;
+    /* transform: translate(55px,0px); */
+  }	
+.sticky-icon a:hover i  {
+	transform:rotate(360deg);}
+/*.search_icon a:hover i  {
+	transform:rotate(360deg);}*/
+.Facebook  {
+	background-color:#3b5998;
+	color:#FFF;}
+	
+.Youtube  {
+	background-color:green;
+	color:#FFF;}
+	
+.Twitter  {
+	background-color:#0077B5;
+	color:#FFF;}
+	
+.Instagram  {
+    background: 
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), 
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%),
+    radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), 
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), 
+    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%);
+
+	color:#FFF;}
+	
+.Google  {
+	background-color:blue;
+	color:#FFF;}						
+.sticky-icon a i {
+	background-color: #FFF;
+    height: 33px;
+    width: 33px;
+    color: #3b5998;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 3px;
+    transition: all 0.5s;
+    margin-left: 1px;
+}
+.sticky-icon a i.fa-facebook-f  {
+	background-color:#FFF;
+	color:#3b5998;}
+	
+.sticky-icon a i.fa-google-plus-g  {
+	background-color:#FFF;
+	color:#d34836;}
+	
+.sticky-icon a i.fa-instagram  {
+	background-color:#FFF;
+	color:#c63287;}
+	.sticky-icon a i.fa-linkedin {
+	background-color:#FFF;
+	color:#0077B5;}
+	
+.sticky-icon a i.fa-whatsapp  {
+	background-color:#fff;
+	color:green;}
+	
+.sticky-icon a i.fa-phone  {
+	background-color:#fff;
+	color:blue;}
+	
+.sticky-icon a i.fa-twitter  {
+	background-color:#FFF;
+	color:#53c5ff;}
+.fas fa-shopping-cart  {
+	background-color:#FFF;}
+
+
+.vs-socials p a{
+  color: #fff;
+}
+th {
+  font-weight: 700;
+  color: #ff3464;
 }
