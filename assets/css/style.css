@@ -12072,7 +12072,7 @@ body.layout4 {
 }
 .schedule-list-v2 li span {
   color: var(--title-color);
-  width: 130px;
+  width: 120px;
   display: inline-block;
 }
 
@@ -12129,6 +12129,13 @@ body.layout4 {
     font-size: 38px;
     line-height: 48px;
   }
+  .blog-content6 .title {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
 }
 @media (max-width: 575px) {
   .title-area-four.nur h2 {
@@ -12155,6 +12162,16 @@ body.layout4 {
   .title-area-four.nur .sub-title br {
     display: none;
   }
+  .schedule-list-v2 li {
+    color: var(--theme-color);
+    font-size: 16px;
+    text-align: left;
+  }
+  .schedule-list-v2 li span {
+    color: var(--title-color);
+    width: 101px;
+    display: inline-block;
+}
 }
 
 .nursuries-card {
@@ -15529,4 +15546,8 @@ th {
 }
 .blog-style6 {
   padding: 60px 0px;
+}
+.blog-content6 h6{
+  font-size: 18px;
+  color: #ff3464;
 }
