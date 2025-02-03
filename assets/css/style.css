@@ -5323,7 +5323,7 @@ blockquote.vs-quote p {
 }
 @media (max-width: 575px) {
   .title-area-four.blog6 h2 {
-    font-size: 49px;
+    font-size: 45px;
     line-height: 49px;
   }
 }
@@ -5343,8 +5343,8 @@ blockquote.vs-quote p {
 
 .blog-card6 {
   position: relative;
-  border-radius: 30px;
-  border: 3px solid #FFD600;
+  /* border-radius: 30px;
+  border: 3px solid #FFD600; */
   background: var(--white-color);
   /* Medium devices */
   /* Small devices */
@@ -5382,18 +5382,26 @@ blockquote.vs-quote p {
   transition: all 0.3s ease;
   border-radius: 20px;
 }
+.blog-card6 {
+  border-radius: 30px;
+  border: 3px solid #FFD600;
+}
+.blog-card6 img{
+  border-radius: 30px;
+}
 
 .blog-content6 {
-  padding: 48px 40px 88px;
+  padding: 12px 40px 5px;
+  text-align: center;
   /* Medium devices */
 }
 @media (max-width: 991px) {
   .blog-content6 {
-    padding: 31px 22px 88px;
+    padding: 10px 22px 5px;
   }
 }
 .blog-content6 .title {
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
@@ -12003,7 +12011,7 @@ body.layout4 {
   position: relative;
   border-radius: 50px;
   background: #FFECA9;
-  padding: 41px 30px 38px;
+  padding: 20px 30px 20px;
   /* Medium devices */
 }
 @media (max-width: 991px) {
@@ -12064,7 +12072,7 @@ body.layout4 {
 }
 .schedule-list-v2 li span {
   color: var(--title-color);
-  width: 162px;
+  width: 130px;
   display: inline-block;
 }
 
@@ -15518,4 +15526,7 @@ textarea {
 th {
   font-weight: 700;
   color: #ff3464;
+}
+.blog-style6 {
+  padding: 60px 0px;
 }
